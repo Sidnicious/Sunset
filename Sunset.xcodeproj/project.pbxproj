@@ -7,83 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13271974144BD1A7003A3F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13271973144BD1A7003A3F89 /* Foundation.framework */; };
-		13271977144BD1A7003A3F89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13271976144BD1A7003A3F89 /* main.m */; };
-		1327197B144BD1A7003A3F89 /* Sunset.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1327197A144BD1A7003A3F89 /* Sunset.1 */; };
+		E9772FA01AAFF4CA0019B7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */; };
+		E9772FA41AAFF4CA0019B7F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9772FA31AAFF4CA0019B7F8 /* Images.xcassets */; };
+		E9772FA71AAFF4CA0019B7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9772FA51AAFF4CA0019B7F8 /* Main.storyboard */; };
+		E9772FBD1AAFF5130019B7F8 /* Sunset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9772FBC1AAFF5130019B7F8 /* Sunset.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1327196D144BD1A7003A3F89 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				1327197B144BD1A7003A3F89 /* Sunset.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1327196F144BD1A7003A3F89 /* Sunset */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sunset; sourceTree = BUILT_PRODUCTS_DIR; };
-		13271973144BD1A7003A3F89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		13271976144BD1A7003A3F89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		13271979144BD1A7003A3F89 /* Sunset-Prefix.pch */ = {isa = PBXFileReference; path = "Sunset-Prefix.pch"; sourceTree = "<group>"; };
-		1327197A144BD1A7003A3F89 /* Sunset.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Sunset.1; sourceTree = "<group>"; };
+		E9772F9A1AAFF4CA0019B7F8 /* Sunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9772F9E1AAFF4CA0019B7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9772FA31AAFF4CA0019B7F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9772FA61AAFF4CA0019B7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9772FBC1AAFF5130019B7F8 /* Sunset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sunset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1327196C144BD1A7003A3F89 /* Frameworks */ = {
+		E9772F971AAFF4CA0019B7F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13271974144BD1A7003A3F89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13271964144BD1A7003A3F89 = {
+		E9772F911AAFF4CA0019B7F8 = {
 			isa = PBXGroup;
 			children = (
-				13271975144BD1A7003A3F89 /* Sunset */,
-				13271972144BD1A7003A3F89 /* Frameworks */,
-				13271970144BD1A7003A3F89 /* Products */,
+				E9772F9C1AAFF4CA0019B7F8 /* Sunset */,
+				E9772F9B1AAFF4CA0019B7F8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		13271970144BD1A7003A3F89 /* Products */ = {
+		E9772F9B1AAFF4CA0019B7F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1327196F144BD1A7003A3F89 /* Sunset */,
+				E9772F9A1AAFF4CA0019B7F8 /* Sunset.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13271972144BD1A7003A3F89 /* Frameworks */ = {
+		E9772F9C1AAFF4CA0019B7F8 /* Sunset */ = {
 			isa = PBXGroup;
 			children = (
-				13271973144BD1A7003A3F89 /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		13271975144BD1A7003A3F89 /* Sunset */ = {
-			isa = PBXGroup;
-			children = (
-				13271976144BD1A7003A3F89 /* main.m */,
-				1327197A144BD1A7003A3F89 /* Sunset.1 */,
-				13271978144BD1A7003A3F89 /* Supporting Files */,
+				E9772FBC1AAFF5130019B7F8 /* Sunset.swift */,
+				E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */,
+				E9772FA31AAFF4CA0019B7F8 /* Images.xcassets */,
+				E9772FA51AAFF4CA0019B7F8 /* Main.storyboard */,
+				E9772F9D1AAFF4CA0019B7F8 /* Supporting Files */,
 			);
 			path = Sunset;
 			sourceTree = "<group>";
 		};
-		13271978144BD1A7003A3F89 /* Supporting Files */ = {
+		E9772F9D1AAFF4CA0019B7F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				13271979144BD1A7003A3F89 /* Sunset-Prefix.pch */,
+				E9772F9E1AAFF4CA0019B7F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -91,13 +72,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1327196E144BD1A7003A3F89 /* Sunset */ = {
+		E9772F991AAFF4CA0019B7F8 /* Sunset */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1327197E144BD1A7003A3F89 /* Build configuration list for PBXNativeTarget "Sunset" */;
+			buildConfigurationList = E9772FB61AAFF4CA0019B7F8 /* Build configuration list for PBXNativeTarget "Sunset" */;
 			buildPhases = (
-				1327196B144BD1A7003A3F89 /* Sources */,
-				1327196C144BD1A7003A3F89 /* Frameworks */,
-				1327196D144BD1A7003A3F89 /* CopyFiles */,
+				E9772F961AAFF4CA0019B7F8 /* Sources */,
+				E9772F971AAFF4CA0019B7F8 /* Frameworks */,
+				E9772F981AAFF4CA0019B7F8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -105,105 +86,175 @@
 			);
 			name = Sunset;
 			productName = Sunset;
-			productReference = 1327196F144BD1A7003A3F89 /* Sunset */;
-			productType = "com.apple.product-type.tool";
+			productReference = E9772F9A1AAFF4CA0019B7F8 /* Sunset.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		13271966144BD1A7003A3F89 /* Project object */ = {
+		E9772F921AAFF4CA0019B7F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "DeepTech, Inc.";
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Coordinated Hackers";
+				TargetAttributes = {
+					E9772F991AAFF4CA0019B7F8 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
 			};
-			buildConfigurationList = 13271969144BD1A7003A3F89 /* Build configuration list for PBXProject "Sunset" */;
+			buildConfigurationList = E9772F951AAFF4CA0019B7F8 /* Build configuration list for PBXProject "Sunset" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 13271964144BD1A7003A3F89;
-			productRefGroup = 13271970144BD1A7003A3F89 /* Products */;
+			mainGroup = E9772F911AAFF4CA0019B7F8;
+			productRefGroup = E9772F9B1AAFF4CA0019B7F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1327196E144BD1A7003A3F89 /* Sunset */,
+				E9772F991AAFF4CA0019B7F8 /* Sunset */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E9772F981AAFF4CA0019B7F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9772FA41AAFF4CA0019B7F8 /* Images.xcassets in Resources */,
+				E9772FA71AAFF4CA0019B7F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		1327196B144BD1A7003A3F89 /* Sources */ = {
+		E9772F961AAFF4CA0019B7F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13271977144BD1A7003A3F89 /* main.m in Sources */,
+				E9772FA01AAFF4CA0019B7F8 /* AppDelegate.swift in Sources */,
+				E9772FBD1AAFF5130019B7F8 /* Sunset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		E9772FA51AAFF4CA0019B7F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9772FA61AAFF4CA0019B7F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1327197C144BD1A7003A3F89 /* Debug */ = {
+		E9772FB41AAFF4CA0019B7F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1327197D144BD1A7003A3F89 /* Release */ = {
+		E9772FB51AAFF4CA0019B7F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COPY_PHASE_STRIP = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		1327197F144BD1A7003A3F89 /* Debug */ = {
+		E9772FB71AAFF4CA0019B7F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sunset/Sunset-Prefix.pch";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sunset/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		13271980144BD1A7003A3F89 /* Release */ = {
+		E9772FB81AAFF4CA0019B7F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sunset/Sunset-Prefix.pch";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sunset/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -211,24 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13271969144BD1A7003A3F89 /* Build configuration list for PBXProject "Sunset" */ = {
+		E9772F951AAFF4CA0019B7F8 /* Build configuration list for PBXProject "Sunset" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1327197C144BD1A7003A3F89 /* Debug */,
-				1327197D144BD1A7003A3F89 /* Release */,
+				E9772FB41AAFF4CA0019B7F8 /* Debug */,
+				E9772FB51AAFF4CA0019B7F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1327197E144BD1A7003A3F89 /* Build configuration list for PBXNativeTarget "Sunset" */ = {
+		E9772FB61AAFF4CA0019B7F8 /* Build configuration list for PBXNativeTarget "Sunset" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1327197F144BD1A7003A3F89 /* Debug */,
-				13271980144BD1A7003A3F89 /* Release */,
+				E9772FB71AAFF4CA0019B7F8 /* Debug */,
+				E9772FB81AAFF4CA0019B7F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 13271966144BD1A7003A3F89 /* Project object */;
+	rootObject = E9772F921AAFF4CA0019B7F8 /* Project object */;
 }
