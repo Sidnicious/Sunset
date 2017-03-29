@@ -7,33 +7,49 @@
 //
 
 import Cocoa
+import ApplicationServices
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(22)
+    let temperatureManager = TemperatureManager()
+    let statusItem = NSStatusBar.system().statusItem(withLength: 22)
     @IBOutlet var statusMenu: NSMenu!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.menu = statusMenu
         statusItem.button!.title = "☀"
         
-        for display in Display.onlineDisplays() {
-            display.setTemperature(8)
+        temperatureManager.scanDisplays()
+        for display in temperatureManager.displays {
+//            let info = ColorSyncDeviceCopyDeviceInfo(
+//                kColorSyncDisplayDeviceClass.takeUnretainedValue(),
+//                CGDisplayCreateUUIDFromDisplayID(display.id).takeRetainedValue()
+//            ).takeRetainedValue()
+//            println("info: \(info)")
+            
+            let profile = ColorSyncProfileCreateWithDisplayID(display.id).takeRetainedValue()
+            print("profile: \(profile)")
+            print("sigs: \(ColorSyncProfileCopyTagSignatures(profile).takeRetainedValue())")
         }
+        
+        CGDisplayRegisterReconfigurationCallback_Swift { display, flags in
+            print("AW YIS: \(display) \(flags)")
+//            for display in Display.onlineDisplays() {
+//                display.setTemperature(2000)
+//            }
+        }
+        
+        temperatureManager.target = 2700
+        
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
-    @IBAction func sliderChanged(sender: NSSlider) {
-        let temperature = sender.integerValue
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            for display in Display.onlineDisplays() {
-                display.setTemperature(temperature)
-            }
-        }
+    @IBAction func sliderChanged(_ sender: NSSlider) {
+        temperatureManager.target = sender.doubleValue
     }
 
 

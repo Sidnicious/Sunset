@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90A1A0E1AC7AC61006FA94E /* ColorTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A1A0D1AC7AC61006FA94E /* ColorTemperature.swift */; };
+		E90A1A111AC7B091006FA94E /* bridges.m in Sources */ = {isa = PBXBuildFile; fileRef = E90A1A101AC7B091006FA94E /* bridges.m */; };
 		E9772FA01AAFF4CA0019B7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */; };
 		E9772FA41AAFF4CA0019B7F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9772FA31AAFF4CA0019B7F8 /* Images.xcassets */; };
 		E9772FA71AAFF4CA0019B7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9772FA51AAFF4CA0019B7F8 /* Main.storyboard */; };
@@ -14,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90A1A0D1AC7AC61006FA94E /* ColorTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTemperature.swift; sourceTree = "<group>"; };
+		E90A1A0F1AC7B090006FA94E /* Sunset-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunset-Bridging-Header.h"; sourceTree = "<group>"; };
+		E90A1A101AC7B091006FA94E /* bridges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridges.m; sourceTree = "<group>"; };
+		E90A1A121AC7B0A8006FA94E /* bridges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridges.h; sourceTree = "<group>"; };
 		E9772F9A1AAFF4CA0019B7F8 /* Sunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9772F9E1AAFF4CA0019B7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +58,15 @@
 		E9772F9C1AAFF4CA0019B7F8 /* Sunset */ = {
 			isa = PBXGroup;
 			children = (
+				E90A1A121AC7B0A8006FA94E /* bridges.h */,
+				E90A1A101AC7B091006FA94E /* bridges.m */,
 				E9772FBC1AAFF5130019B7F8 /* Sunset.swift */,
+				E90A1A0D1AC7AC61006FA94E /* ColorTemperature.swift */,
 				E9772F9F1AAFF4CA0019B7F8 /* AppDelegate.swift */,
 				E9772FA31AAFF4CA0019B7F8 /* Images.xcassets */,
 				E9772FA51AAFF4CA0019B7F8 /* Main.storyboard */,
 				E9772F9D1AAFF4CA0019B7F8 /* Supporting Files */,
+				E90A1A0F1AC7B090006FA94E /* Sunset-Bridging-Header.h */,
 			);
 			path = Sunset;
 			sourceTree = "<group>";
@@ -95,11 +105,14 @@
 		E9772F921AAFF4CA0019B7F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Coordinated Hackers";
 				TargetAttributes = {
 					E9772F991AAFF4CA0019B7F8 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -139,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9772FA01AAFF4CA0019B7F8 /* AppDelegate.swift in Sources */,
+				E90A1A111AC7B091006FA94E /* bridges.m in Sources */,
+				E90A1A0E1AC7AC61006FA94E /* ColorTemperature.swift in Sources */,
 				E9772FBD1AAFF5130019B7F8 /* Sunset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,14 +185,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -214,8 +232,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -234,6 +254,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -241,10 +262,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Sunset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coordinatedhackers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sunset/Sunset-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -252,10 +278,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Sunset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coordinatedhackers.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sunset/Sunset-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
